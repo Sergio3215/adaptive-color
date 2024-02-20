@@ -1,12 +1,12 @@
 {
   "name": "adaptive-color",
   "version": "1.0.0",
-  "description": "",
+  "description": "Adaptive color automatically with Naural Network",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["color","adaptive color","util","ui tool","ui","text color", "background color","lib","contraste", "constrast"],
+  "author": "Principiante en Programar",
   "license": "ISC"
 }
