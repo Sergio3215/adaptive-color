@@ -50,7 +50,7 @@ console.log(myFontText);
 
 # Version History
 
-### Version 1.1.0
+### Version 1.1.1
 Update README and add reference of code.
 
 ### <s> Version 1.0.0</s>
