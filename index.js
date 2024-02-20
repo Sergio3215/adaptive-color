@@ -2,10 +2,15 @@ import { NeuralNetwork } from "./brain";
 
 // get color to rgb
 
-const getNameColorARGB = (nombreColor) => {
+/**
+ * @param nameColor string: Any color
+ * @return string: Color RGB representation
+*/
+
+const getNameColorARGB = (nameColor) => {
     try {
         let temporalDiv = document.createElement("div");
-        temporalDiv.style.color = nombreColor;
+        temporalDiv.style.color = nameColor;
         document.body.appendChild(temporalDiv);
         let colorRGB = window.getComputedStyle(temporalDiv).color;
         document.body.removeChild(temporalDiv);
@@ -16,7 +21,10 @@ const getNameColorARGB = (nombreColor) => {
     }
 }
 
-
+/**
+ * @param myColor string: RGB or RGBA color
+ * @return string: Color RGB contrast
+*/
 // Color Automatically
 let netColors = new NeuralNetwork();
 
@@ -99,6 +107,11 @@ net.train([
 ]);
 
 // var output = net.run([{ r: 1, g: 0, b: 0 }]);  // [0.987]
+
+/**
+ * @param myColor string: RGB or RGBA color
+ * @return string: Color monochromatic contrast
+*/
 
 const getMonoColor = (myColor) => {
     let color = ''
