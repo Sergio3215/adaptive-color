@@ -50,7 +50,11 @@ console.log(myFontText);
 
 # Version History
 
-### Version 1.1.1
+## Version 1.2.1
+Improve about select to color when you add this one
+
+
+### <s>Version 1.1.1</s>
 Update README and add reference of code.
 
 ### <s> Version 1.0.0</s>
