@@ -31,24 +31,30 @@ let netColors = new NeuralNetwork();
 netColors.train([
     //black
     { input: { r: 0, g: 0, b: 0, a: 0 }, output: { r: 1, g: 1, b: 1, a: 1 } },
-    { input: { r: 0, g: 0, b: 0, a: 1 }, output: { r: 0.56, g: 1, b: 0, a: 1 } },
+    { input: { r: 0, g: 0, b: 0, a: 1 }, output: { r: 1, g: 1, b: 1, a: 1 } },
+
     //white
     { input: { r: 1, g: 1, b: 1, a: 0 }, output: { r: 0, g: 0, b: 0, a: 1 } },
-    { input: { r: 1, g: 1, b: 1, a: 1 }, output: { r: 0.3, g: 0, b: 0.5, a: 1 } },
-
-    //green
-    { input: { r: 0, g: 1, b: 0, a: 1 }, output: { r: 0.8, g: 0.48, b: 1, a: 1 } },
+    { input: { r: 1, g: 1, b: 1, a: 1 }, output: { r: 0, g: 0, b: 0, a: 1 } },
 
     //red
-    { input: { r: 1, g: 0, b: 0, a: 1 }, output: { r: 0.9, g: 0.78, b: 0, a: 1 } },
+    { input: { r: 1, g: 0, b: 0, a: 1 }, output: { r: 0, g: 1, b: 1, a: 1 } },
+    { input: { r: 0, g: 1, b: 1, a: 1 }, output: { r: 0, g: 1, b: 1, a: 1 } },
+    
+    //green
+    { input: { r: 0, g: 1, b: 0, a: 1 }, output: { r: 1, g: 0, b: 1, a: 1 } },
+    { input: { r: 1, g: 0, b: 1, a: 1 }, output: { r: 1, g: 0, b: 1, a: 1} },
+    { input: { r: 0.55, g: 0.5, b: 0, a: 1 }, output: { r: 0, g: 1, b: 0.5, a: 1} },
 
     //blue
     { input: { r: 0, g: 0, b: 1, a: 1 }, output: { r: 1, g: 1, b: 0, a: 1} },
+    { input: { r: 1, g: 1, b: 0, a: 1 }, output: { r: 0, g: 0, b: 0, a: 1} },
+    { input: { r: 1, g: 0, b: 0.5, a: 1 }, output: { r: 0.6, g: 0.8, b: 0, a: 1} },
 
     //mixes
-    { input: { r: 1, g: 1, b: 0, a: 1 }, output: { r: 0.3, g: 0.2, b: 1, a: 0 } },
-    { input: { r: 0.8, g: 0.5, b: 0.2, a: 1 }, output: { r: 1, g: 0.8, b: 0.4, a: 1 } },
-    { input: { r: 0.8, g: 0.9, b: 0.9, a: 1 }, output: { r: 0, g: 0.2, b: 0.67, a: 1 } },
+    // { input: { r: 1, g: 1, b: 0, a: 1 }, output: { r: 0.3, g: 0.2, b: 1, a: 0 } },
+    // { input: { r: 0.8, g: 0.5, b: 0.2, a: 1 }, output: { r: 1, g: 0.8, b: 0.4, a: 1 } },
+    // { input: { r: 0.8, g: 0.9, b: 0.9, a: 1 }, output: { r: 0, g: 0.2, b: 0.67, a: 1 } },
 ]);
 
 const getColorRGB = (myColor) => {
