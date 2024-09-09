@@ -7,7 +7,7 @@ import { NeuralNetwork } from "./brain";
  * @return string: Color RGB representation
 */
 
-const getNameColorARGB = (nameColor) => {
+export const getNameColorARGB = (nameColor) => {
     try {
         let temporalDiv = document.createElement("div");
         temporalDiv.style.color = nameColor;
@@ -57,7 +57,7 @@ netColors.train([
     // { input: { r: 0.8, g: 0.9, b: 0.9, a: 1 }, output: { r: 0, g: 0.2, b: 0.67, a: 1 } },
 ]);
 
-const getColorRGB = (myColor) => {
+export const getColorRGB = (myColor) => {
     let color = ''
     let rgb = myColor
     if (rgb.includes("rgba")) {
@@ -119,7 +119,7 @@ net.train([
  * @return string: Color monochromatic contrast
 */
 
-const getMonoColor = (myColor) => {
+export const getMonoColor = (myColor) => {
     let color = ''
     let rgb = myColor
     if (rgb.includes("rgba")) {
@@ -146,8 +146,8 @@ const getMonoColor = (myColor) => {
     return color;
 }
 
-module.exports = {
-    getMonoColor,
-    getColorRGB,
-    getNameColorARGB
-}
+// module.exports = {
+//     getMonoColor,
+//     getColorRGB,
+//     getNameColorARGB
+// }
